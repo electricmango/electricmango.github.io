@@ -20,10 +20,22 @@
     </head>
     <body>
         <div id = "welcome">
-            <h1>Welcome!</h1>
+            <h1 id = "welcomeh" onclick = "welcomehc()">Welcome!</h1>
+            <script type = text/javascript>
+                var c = 0;
+                function welcomehc(){
+                    switch(c){
+                        case 0: document.getElementById("welcomeh").innerHTML = "안녕하세요!"; ++c; break;
+                        case 1: document.getElementById("welcomeh").innerHTML = "你好!"; ++c; break;
+                        case 2: document.getElementById("welcomeh").innerHTML = "おはようございます!"; ++c; break;
+                        case 3: document.getElementById("welcomeh").innerHTML = "Välkommen!"; ++c; break;
+                        case 4: document.getElementById("welcomeh").innerHTML = "Welcome!"; c = 0; break;
+                    }
+            } </script>
             Check out my <a href = "https://github.com/electricmango">GitHub</a>,
             <a href = "http://www.youtube.com/user/newelectricmango">YouTube</a> and
-            <a href = "http://electronicmango.blogspot.kr">blog (Blogger)</a>!
+            <a href = "http://electronicmango.blogspot.kr">Blogger bloggie bloggy blog</a>!
         </div>
-    </body>
+    </body
+        
 </html>

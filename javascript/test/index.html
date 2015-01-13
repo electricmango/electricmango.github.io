@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- HTML5 shiv on Google CDN [http://snipplr.com/view/50498/] -->
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel = "stylesheet" href = "index.css">
+        <title>테스트</title>
+    </head>
+    <body>
+        <div id = "info">
+            왼쪽 두개의 상자에 아무거나 입력하고 옆에 ‘=‘ 단추를 누르면 두개의 상자 안에 있는것들이 더해져서 마지막 상자에 나옵니다.<br>
+            Type in some text in the first two text boxes, and press the tiny ‘=‘ button right next to them to add the two strings together.<br>
+        </div><div id = "JS">
+            <input type = "text" id = "left" size = "8"> + <input type = "text" id = "right" size = "8"> <input type = "button" id = "equals" value = "=" onclick = "add();"> <input type = "text" id = "sum" size = "12">
+            <script> function add() {
+                    document.getElementById("sum").value = document.getElementById("left").value.concat(document.getElementById("right").value);
+            } </script>
+        </div>
+    </body>
+</html>
