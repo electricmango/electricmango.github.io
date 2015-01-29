@@ -20,6 +20,14 @@
         <meta name="viewport" content="width=device-width">
     </head>
     <body>
+        <script type = text/javascript>
+            var dtitle = "electricmango";
+            var hellos = ["Hello?", "I need attention", "!?", "나좀봐", "hej", "asdfasdfasdfasdfasdf"];
+            window.onblur = function(){
+                document.title = hellos[Math.floor(Math.random()*hellos.length)];
+            }; window.onfocus  = function(){
+                document.title = dtitle;
+            };</script>
         <div id = "welcome">
             <h1 id = "welcomeh" onclick = "welcomehc()">Welcome!</h1>
             <script type = text/javascript>
@@ -32,10 +40,10 @@
                         case 3: document.getElementById("welcomeh").innerHTML = "Välkommen!"; ++c; break;
                         case 4: document.getElementById("welcomeh").innerHTML = "Welcome!"; c = 0; break;
                     }
-            } </script>
+                } </script>
             Check out my <a href = "https://github.com/electricmango">GitHub</a>,
             <a href = "http://www.youtube.com/user/newelectricmango">YouTube</a> and
-            <a href = "http://electronicmango.blogspot.kr">Blogger blog</a>
+            <a href = "http://electronicmango.blogspot.kr">Blogger</a>!
         </div>
     </body>
 </html>
