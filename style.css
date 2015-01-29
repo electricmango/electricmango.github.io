@@ -62,8 +62,8 @@ body {
 }
 
 #welcome {
-    margin-top: 5em;
-    margin-top: 10vh;
+    margin-top: 10em;
+    margin-top: 20vh;
     
     word-wrap: break-word;
 }
@@ -86,8 +86,4 @@ h1 {
     
     text-decoration: none;
     text-align: center;
-}
-
-#bitcoindonation {
-    margin-top: 3em;
 }
