@@ -1,12 +1,20 @@
 <!DOCTYPE html>
+
 <html>
+
     <head>
-        <meta charset="utf-8"/>
+
+        <meta charset = "utf-8"/>
+
         <!-- HTML5 shiv on Google CDN [http://snipplr.com/view/50498/] -->
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         
+
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+
         <!-- generated with http://realfavicongenerator.net/ -->
         <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
@@ -26,27 +34,48 @@
         <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
         <meta name="theme-color" content="#ffffff">
         
+
+
         <meta name="google-site-verification" content="jdI0fF1h3zCetmiGKYghhUrGAOojFDglstJdqsHGlQs" />
         
-        <meta name = "viewport" content = "initial-scale = 0.1">
         
+
         <link rel = "stylesheet" href = "style.css">
+
+
         <title>electricmango</title>
-        <meta name="viewport" content="width=device-width">
+
     </head>
+
     <body>
+
         <script type = text/javascript>
+
             var dtitle = "electricmango";
-            var hellos = ["Hello?", "I need attention", "!?", "나좀봐", "hej", "asdfasdfasdfasdfasdf"];
+
+            var hellos = ["Hello?", "!?", "나좀봐", "asdfasdfasdfasdfasdf"];
+
+
             window.onblur = function(){
                 document.title = hellos[Math.floor(Math.random()*hellos.length)];
-            }; window.onfocus  = function(){
+            };
+
+            window.onfocus  = function(){
                 document.title = dtitle;
-            };</script>
+            };
+
+        </script>
+
+
         <div id = "welcome">
+
             <h1 id = "welcomeh" onclick = "welcomehc()">Welcome!</h1>
+
             <script type = text/javascript>
+
                 var c = 0;
+
+
                 function welcomehc(){
                     switch(c){
                         case 0: document.getElementById("welcomeh").innerHTML = "안녕하세요!"; ++c; break;
@@ -55,10 +84,16 @@
                         case 3: document.getElementById("welcomeh").innerHTML = "Välkommen!"; ++c; break;
                         case 4: document.getElementById("welcomeh").innerHTML = "Welcome!"; c = 0; break;
                     }
-                } </script>
+                }
+
+            </script>
+
             Check out my <a href = "https://github.com/electricmango">GitHub</a>,
             <a href = "http://www.youtube.com/user/newelectricmango">YouTube</a> and
             <a href = "http://electronicmango.blogspot.kr">Blogger</a>!
+
         </div>
+
     </body>
+    
 </html>
